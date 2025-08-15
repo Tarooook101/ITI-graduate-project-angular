@@ -3,7 +3,6 @@
   padding-top: 2rem;
 }
 
-/* Hero Section */
 .hero-section {
   padding: 3rem 0 2rem;
 }
@@ -58,7 +57,6 @@
   letter-spacing: 1px;
 }
 
-/* Cards Sections */
 .cards-section {
   border-bottom: 1px solid #f0f0f0;
 }
@@ -132,7 +130,6 @@
   opacity: 0.8;
 }
 
-/* Large Cards Sections */
 .large-cards-section {
   background: #fafafa;
   border-bottom: 1px solid #f0f0f0;
@@ -173,7 +170,6 @@
   margin: 1rem 0 1.5rem 0;
 }
 
-/* View All Button Section */
 .view-all-section {
   background: #fff;
   padding: 4rem 0;
@@ -201,7 +197,6 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Design */
 @media (max-width: 1199.98px) {
   .hero-title {
     font-size: 2.4rem;
