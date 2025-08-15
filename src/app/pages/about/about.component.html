@@ -1,0 +1,98 @@
+<main class="about-page">
+  <!-- Intro Title Section -->
+  <section class="intro-section" [@fadeInUp]>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <h2 class="section-label">ABOUT</h2>
+        </div>
+        <div class="col-lg-9 col-md-8">
+          <h1 class="intro-title">CLITA INCORRUPTE AT VIX, NAM TE MOLESTIE IUDICABIT ERRORIBUS ODIO.</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full-width Banner Image -->
+  <section class="banner-section" [@fadeInUp]>
+    <div class="banner-image">
+      <img src="assets/images/hero.jpg">
+    </div>
+  </section>
+
+  <!-- About Description Section -->
+  <section class="about-content" [@fadeInUp]>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <h2 class="content-title">THIS IS NOICELAND.</h2>
+
+          <div class="text-content">
+            <p>Vim et dolore eligendi voluptua, quo id autem quas conclusionemque, et sed porro station eligendi. Autem accommodare est amet. Solut propriae petentium id vix, cu vim eligendi constituto incorrupte. Ut vim illum recipere consequat, qui te exerci fermentum. Ex pro ullum molestie nusciatur, ut est neque nobis saperet, etiam ponderum iuvaret te sit.</p>
+
+            <p>Vis menandri deseruisse vulputibus id. Et pri epicuri molestium, auctor appetere et his. Nam promptat recteque deserunt ut, vix cibo fastidii scriptorem cum id. Tollit consequat adversarium duo te. Possit lorem reprehendunt ius cu, nobis omnium rerum ut sea, cum posiut culpam nonumy ne. In iusto interpretaris sapientesque te nec, et sed saperet voluptua.</p>
+          </div>
+
+          <div class="contact-link">
+            <a href="#contact" class="contact-btn">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Team Section -->
+  <section class="team-section" [@fadeInUp]>
+    <div class="container">
+      <h2 class="section-title">OUR TEAM</h2>
+
+      <div class="team-grid" [@staggerTeam]>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4" *ngFor="let member of teamMembers">
+            <div class="team-member">
+              <div class="member-image">
+                <img [src]="member.image" [alt]="member.name">
+              </div>
+              <div class="member-info">
+                <h3 class="member-name">{{ member.name }}</h3>
+                <p class="member-role">{{ member.role }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get In Touch Section -->
+  <section class="contact-section" [@fadeInUp] id="contact">
+    <div class="container">
+      <h2 class="section-title">WANNA GET IN TOUCH</h2>
+
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="contact-text">
+            <p>Vim et dolore eligendi voluptua, quo id autem quas conclusionemque, et sed porro station eligendi. Autem accommodare est amet. Solut propriae petentium id vix, cu vim eligendi constituto incorrupte.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4" *ngFor="let contact of contactInfo">
+            <div class="contact-item">
+              <div class="contact-number">
+                <span>{{ contact.number }}</span>
+              </div>
+              <div class="contact-details">
+                <h3>{{ contact.title }}</h3>
+                <p *ngIf="contact.subtitle">{{ contact.subtitle }}</p>
+                <p *ngIf="contact.detail">{{ contact.detail }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

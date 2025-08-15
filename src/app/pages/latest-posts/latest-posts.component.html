@@ -1,0 +1,27 @@
+<main class="latest-posts-page">
+  <div class="container">
+    <!-- Header Section -->
+    <header class="page-header" [@headerFade]>
+      <h1 class="page-title">LATEST POSTS</h1>
+    </header>
+
+    <!-- Posts Grid -->
+    <section class="posts-section">
+      <div class="posts-grid" [@fadeInUp]>
+        <article class="post-card" *ngFor="let post of allPosts; trackBy: trackByPostId">
+          <div class="post-image">
+            <img [src]="post.image" [alt]="post.title" loading="lazy">
+            <div class="post-overlay">
+              <span class="read-more">READ MORE</span>
+            </div>
+          </div>
+          <div class="post-content">
+            <span class="post-category">{{ post.category }}</span>
+            <h3 class="post-title">{{ post.title }}</h3>
+            <span class="post-author">BY {{ post.author }}</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+</main>

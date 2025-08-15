@@ -1,0 +1,157 @@
+<main class="home-page">
+  <!-- Hero Section -->
+  <section class="hero-section" [@fadeInUp]>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="hero-image">
+            <img [src]="heroPost.image" [alt]="heroPost.title" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="hero-content">
+            <span class="hero-category">{{ heroPost.category }}</span>
+            <h1 class="hero-title">{{ heroPost.title }}</h1>
+            <p class="hero-description">{{ heroPost.description }}</p>
+            <span class="hero-author">BY {{ heroPost.author }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- First 3 Cards Section -->
+  <section class="cards-section py-5" [@staggerCards]>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" *ngFor="let post of firstThreeCards; trackBy: trackByPostId">
+          <div class="card-item post-card h-100">
+            <div class="post-image">
+              <img [src]="post.image" [alt]="post.title" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <span class="post-category">{{ post.category }}</span>
+              <h3 class="post-title">{{ post.title }}</h3>
+              <span class="post-author">BY {{ post.author }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Second 3 Cards Section -->
+  <section class="cards-section py-5" [@staggerCards]>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" *ngFor="let post of secondThreeCards; trackBy: trackByPostId">
+          <div class="card-item post-card h-100">
+            <div class="post-image">
+              <img [src]="post.image" [alt]="post.title" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <span class="post-category">{{ post.category }}</span>
+              <h3 class="post-title">{{ post.title }}</h3>
+              <span class="post-author">BY {{ post.author }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- First 4 Cards Section -->
+  <section class="cards-section py-5" [@staggerCards]>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6" *ngFor="let post of firstFourCards; trackBy: trackByPostId">
+          <div class="card-item post-card h-100">
+            <div class="post-image">
+              <img [src]="post.image" [alt]="post.title" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <span class="post-category">{{ post.category }}</span>
+              <h3 class="post-title">{{ post.title }}</h3>
+              <span class="post-author">BY {{ post.author }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Second 4 Cards Section -->
+  <section class="cards-section py-5" [@staggerCards]>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6" *ngFor="let post of secondFourCards; trackBy: trackByPostId">
+          <div class="card-item post-card h-100">
+            <div class="post-image">
+              <img [src]="post.image" [alt]="post.title" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <span class="post-category">{{ post.category }}</span>
+              <h3 class="post-title">{{ post.title }}</h3>
+              <span class="post-author">BY {{ post.author }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- View All Button -->
+  <section class="view-all-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <button class="btn-outline-custom" routerLink="/latest-posts">
+            VIEW ALL LATEST POSTS
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- First 2 Cards Section -->
+  <section class="large-cards-section py-5" [@staggerCards]>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6" *ngFor="let post of firstTwoCards; trackBy: trackByPostId">
+          <div class="card-item large-post-card h-100">
+            <div class="post-image">
+              <img [src]="post.image" [alt]="post.title" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <span class="post-category">{{ post.category }}</span>
+              <h3 class="post-title">{{ post.title }}</h3>
+              <p class="post-description">{{ post.description }}</p>
+              <span class="post-author">BY {{ post.author }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Second 2 Cards Section -->
+  <section class="large-cards-section py-5" [@staggerCards]>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6" *ngFor="let post of secondTwoCards; trackBy: trackByPostId">
+          <div class="card-item large-post-card h-100">
+            <div class="post-image">
+              <img [src]="post.image" [alt]="post.title" class="card-img-top">
+            </div>
+            <div class="card-body">
+              <span class="post-category">{{ post.category }}</span>
+              <h3 class="post-title">{{ post.title }}</h3>
+              <p class="post-description">{{ post.description }}</p>
+              <span class="post-author">BY {{ post.author }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,367 @@
+.about-page {
+  margin-top: 80px;
+}
+
+/* Intro Title Section */
+.intro-section {
+  padding: 7rem 0 7rem;
+  background: #fff;
+}
+
+.section-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+.intro-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* Full-width Banner Image */
+.banner-section {
+  margin: 0;
+  padding: 0;
+}
+
+.banner-image {
+  width: 100%;
+  height: 60vh;
+  min-height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* About Content Section */
+.about-content {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.content-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.text-content {
+  margin: 2rem 0 3rem;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.contact-link {
+  text-align: left;
+}
+
+.contact-btn {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.contact-btn:hover {
+  color: #333;
+  border-bottom-color: #000;
+}
+
+/* Team Section */
+.team-section {
+  padding: 5rem 0;
+  background: #f8f8f8;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.team-member {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.member-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1.5rem;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.team-member:hover .member-image img {
+  filter: grayscale(100%);
+}
+
+.member-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.member-role {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+.contact-text {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+  text-align: justify;
+}
+
+.contact-grid {
+  margin-top: 3rem;
+}
+
+.contact-item {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  border: 2px solid #f0f0f0;
+  background: #fff;
+  transition: all 0.3s ease;
+  height: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-item:hover {
+  border-color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-number {
+  width: 50px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 auto 1.5rem;
+}
+
+.contact-details h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+.contact-details p {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0.3rem 0;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1199.98px) {
+  .intro-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .intro-section {
+    padding: 3rem 0 2rem;
+  }
+
+  .intro-title {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  .banner-image {
+    height: 50vh;
+    min-height: 300px;
+  }
+
+  .about-content,
+  .team-section,
+  .contact-section {
+    padding: 4rem 0;
+  }
+
+  .member-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-page {
+    margin-top: 70px;
+  }
+
+  .intro-section {
+    padding: 2rem 0 1rem;
+  }
+
+  .section-label {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .intro-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .banner-image {
+    height: 40vh;
+    min-height: 250px;
+  }
+
+  .content-title,
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .contact-text p {
+    text-align: left;
+  }
+
+  .about-content,
+  .team-section,
+  .contact-section {
+    padding: 3rem 0;
+  }
+
+  .member-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .member-name {
+    font-size: 1rem;
+  }
+
+  .member-role {
+    font-size: 0.85rem;
+  }
+
+  .contact-item {
+    padding: 2rem 1rem;
+    min-height: 160px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .intro-title {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .content-title,
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .member-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contact-item {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .about-page {
+    margin-top: 0;
+  }
+
+  .banner-image {
+    height: 300px;
+  }
+
+  .team-section,
+  .contact-section {
+    page-break-inside: avoid;
+  }
+}
