@@ -46,8 +46,7 @@ export class FooterComponent {
 
     if (emailInput && emailInput.value) {
       console.log('Newsletter subscription:', emailInput.value);
-      // Add your newsletter subscription logic here
-      emailInput.value = ''; // Clear the input
+      emailInput.value = ''; 
     }
   }
 }
